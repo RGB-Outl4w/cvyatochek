@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Flowers</title>
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <button id="startButton" class="gradient-button">святошек</button>
+      <svg id="flowerAnimation" class="hidden" viewBox="0 0 800 600">
+        <!-- Left flower -->
+        <g id="leftFlower">
+          <path class="flower-path stem-gradient" d=""/>
+          <path class="flower-path flower-gradient" d=""/>
+        </g>
+        
+        <!-- Middle flower -->
+        <path class="flower-path stem-gradient middle-flower" d=""/>
+        <path class="flower-path flower-gradient middle-flower" d=""/>
+        
+        <!-- Right flower -->
+        <g id="rightFlower">
+          <path class="flower-path stem-gradient" d=""/>
+          <path class="flower-path flower-gradient" d=""/>
+        </g>
+      </svg>
+      <div id="restartText" class="hidden">Нажмите R, чтобы повторить</div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
